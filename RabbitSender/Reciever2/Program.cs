@@ -1,4 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿
 using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
 using System.Text;
@@ -11,7 +11,7 @@ var factory = new ConnectionFactory
     Port = 5672,               // Default RabbitMQ port
     UserName = "guest",        // RabbitMQ username
     Password = "guest",       // RabbitMQ password
-    ClientProvidedName = "Rabbit Reciever1 App"
+    ClientProvidedName = "Rabbit Reciever2 App"
 };
 
 using var connection = await factory.CreateConnectionAsync();
